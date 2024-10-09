@@ -9,6 +9,8 @@ import { read } from '@/infra/routes/users/read'
 import { logout } from '@/infra/routes/logout'
 import { login } from '@/infra/routes/login'
 
+const port = Number(process.env.PORT) || 3333
+
 const app = fastify()
   .register(cors, {
     origin: '*',
@@ -52,7 +54,7 @@ const app = fastify()
 
 app
   .listen({
-    port: 3333,
+    port: port,
   })
   .then(() => {
     console.log('Server is running on port 3333')
