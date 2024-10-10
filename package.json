@@ -6,7 +6,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch --env-file .env src/app/app.ts",
     "build": "tsup src",
-    "start": "node .env dist/app/app.js"
+    "start": "node dist/app/app.js"
   },
   "keywords": [],
   "author": "",
